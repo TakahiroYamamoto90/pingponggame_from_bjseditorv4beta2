@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const editor = require("babylonjs-editor-webpack-progress");
 
 module.exports = (_, argv) => {
 	const entryPath = path.join(__dirname, "src/index.ts");
@@ -18,14 +19,17 @@ module.exports = (_, argv) => {
 			rules: [
 				{
 					test: /\.ts?$/,
-					// we use babel-loader for polyfill only on production build
-					loader: ["ts-loader"],
+					loader: "ts-loader",
 					exclude: [
 						path.join(__dirname, "node_modules"),
 						path.join(__dirname, "dist"),
 						path.join(__dirname, "projects"),
 						path.join(__dirname, "scenes"),
 					],
+				},
+				{
+					test: /\.fx?$/,
+					loader: "raw-loader",
 				},
 			],
 		},
@@ -36,15 +40,15 @@ module.exports = (_, argv) => {
 			new webpack.BannerPlugin({
 				banner: `${package.name} ${package.version} ${new Date().toString()}`,
 			}),
-			new webpack.WatchIgnorePlugin([
-				/\.js$/,
-				/\.d\.ts$/
-			]),
+			new webpack.WatchIgnorePlugin({
+				paths: [/\.js$/, /\.d\.ts$/],
+			}),
+			editor.createProgressPlugin(new webpack.ProgressPlugin()),
 		],
 		optimization: {
 			minimize: false,
 			usedExports: true,
 		},
-		devtool: "cheap-source-map",
+		devtool: "source-map",
 	};
 };

@@ -51,12 +51,18 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
+			"geometryUniqueId": 42,
 			"geometryId": "1048e812-0cc0-4d4c-86fa-842b9be9ca48",
 			"subMeshes": null,
+			"materialUniqueId": 9,
 			"materialId": "b2346078-7465-4c63-8877-44b542584898",
 			"metadata": {
 				"isPickable": true,
-				"script": {}
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0,
+				"_waitingParentId": null
 			},
 			"instances": [],
 			"animations": [],
@@ -71,6 +77,7 @@
 				0
 			],
 			"applyFog": true,
+			"parentId": null,
 			"delayLoadingFile": "geometries/1048e812-0cc0-4d4c-86fa-842b9be9ca48.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				2500,

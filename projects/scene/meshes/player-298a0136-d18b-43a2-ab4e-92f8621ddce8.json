@@ -1,4 +1,5 @@
 {
+	"materials": [],
 	"meshes": [
 		{
 			"name": "player",
@@ -51,8 +52,11 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
+			"geometryUniqueId": 32,
 			"geometryId": "69ca3f7c-8ae1-47ec-9917-818eb1365551",
 			"subMeshes": null,
+			"materialUniqueId": 7,
+			"materialId": "03bdd37e-fe54-4095-a392-0de62b0de089",
 			"metadata": {
 				"isPickable": true,
 				"script": {
@@ -80,7 +84,9 @@
 						}
 					}
 				},
-				"doNotExport": false
+				"doNotExport": false,
+				"renderingGroupId": 0,
+				"_waitingParentId": null
 			},
 			"instances": [],
 			"animations": [],
@@ -95,6 +101,7 @@
 				0
 			],
 			"applyFog": true,
+			"parentId": null,
 			"delayLoadingFile": "geometries/69ca3f7c-8ae1-47ec-9917-818eb1365551.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
@@ -145,7 +152,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

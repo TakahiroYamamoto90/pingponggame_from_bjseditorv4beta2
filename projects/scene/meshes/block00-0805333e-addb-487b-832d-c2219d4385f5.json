@@ -1,4 +1,5 @@
 {
+	"materials": [],
 	"meshes": [
 		{
 			"name": "block00",
@@ -52,13 +53,17 @@
 			"overrideMaterialSideOrientation": null,
 			"parentId": "7fc6c9a6-eb6a-4ea7-bdcf-dc8bfac92efb",
 			"isUnIndexed": false,
+			"geometryUniqueId": 33,
 			"geometryId": "0e6eb345-86b5-4750-aa8f-f2011db2a0ad",
 			"subMeshes": null,
+			"materialUniqueId": 37,
+			"materialId": "default material",
 			"metadata": {
 				"isPickable": true,
 				"script": {
 					"name": "src/scenes/scene/block.ts"
-				}
+				},
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],
@@ -123,7 +128,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

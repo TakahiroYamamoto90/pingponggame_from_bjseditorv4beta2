@@ -4,17 +4,17 @@
 	"materials": [
 		{
 			"bindedMeshes": [],
-			"json": "cube-03bdd37e-fe54-4095-a392-0de62b0de089.json",
+			"json": "scene1/cube-03bdd37e-fe54-4095-a392-0de62b0de089.material",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [],
-			"json": "ground-44ce4d7a-5718-4025-a141-272ee6387673.json",
+			"json": "scene1/ground-44ce4d7a-5718-4025-a141-272ee6387673.material",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [],
-			"json": "sky-b2346078-7465-4c63-8877-44b542584898.json",
+			"json": "scene1/sky-b2346078-7465-4c63-8877-44b542584898.material",
 			"isMultiMaterial": false
 		}
 	],
@@ -297,5 +297,7 @@
 				"customType": "DefaultRenderingPipeline"
 			}
 		}
-	}
+	},
+	"particleSystems": [],
+	"sounds": []
 }

@@ -39,6 +39,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.runScene = exports.scriptsMap = void 0;
 var tools_1 = require("../tools");
 /**
  * Defines the map of all available scripts in the project.
@@ -59,9 +60,9 @@ function runScene(scene, rootUrl) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             // Attach scripts to objects in scene.
-            tools_1.attachScripts(exports.scriptsMap, scene);
+            (0, tools_1.attachScripts)(exports.scriptsMap, scene);
             // Configure post-processes
-            tools_1.configurePostProcesses(scene, rootUrl);
+            (0, tools_1.configurePostProcesses)(scene, rootUrl);
             return [2 /*return*/];
         });
     });

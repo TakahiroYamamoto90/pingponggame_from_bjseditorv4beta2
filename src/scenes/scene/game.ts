@@ -1,7 +1,8 @@
 import { Scene } from "@babylonjs/core";
 import { AdvancedDynamicTexture, TextBlock, Control, Image, StackPanel } from "@babylonjs/gui";
 
-import { fromScene } from "../tools";
+//import { fromScene } from "../tools";
+import { fromScene } from "../decorators";
 
 import BallComponent from "./ball";
 

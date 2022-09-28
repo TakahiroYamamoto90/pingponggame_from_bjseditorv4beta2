@@ -22,13 +22,15 @@
 	"reIntegrateRotationIntoRotationQuaternion": false,
 	"name": "walls",
 	"id": "ea86735f-1c08-4dee-8a16-12a37d9ab3a7",
-	"uniqueId": 119,
 	"state": "",
 	"metadata": {
-		"script": {},
+		"script": {
+			"name": "None"
+		},
 		"doNotExport": false
 	},
 	"type": "TransformNode",
+	"uniqueId": 119,
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

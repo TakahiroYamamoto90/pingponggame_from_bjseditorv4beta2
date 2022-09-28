@@ -1,5 +1,6 @@
 import { Mesh, KeyboardEventTypes, PhysicsImpostor } from "@babylonjs/core";
-import { onKeyboardEvent,fromScene } from "../tools";
+//import { onKeyboardEvent,fromScene } from "../tools";
+import { onKeyboardEvent,fromScene } from "../decorators";
 
 export default class PlayerComponent extends Mesh {
     /**

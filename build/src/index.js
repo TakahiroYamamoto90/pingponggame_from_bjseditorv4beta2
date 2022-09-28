@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Game = void 0;
 var core_1 = require("@babylonjs/core");
 require("@babylonjs/materials");
 var scene_1 = require("./scenes/scene");
@@ -27,7 +28,7 @@ var Game = /** @class */ (function () {
                 }
                 _this.scene.activeCamera.attachControl(_this.engine.getRenderingCanvas(), false);
                 // Run the scene to attach scripts etc.
-                scene_1.runScene(_this.scene, rootUrl);
+                (0, scene_1.runScene)(_this.scene, rootUrl);
                 // Render.
                 _this.engine.runRenderLoop(function () { return _this.scene.render(); });
             });

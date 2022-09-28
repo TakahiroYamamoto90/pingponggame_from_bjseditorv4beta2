@@ -4,6 +4,10 @@
 	"shadowOrthoScale": 0.1,
 	"autoUpdateExtends": true,
 	"autoCalcShadowZBounds": false,
+	"orthoLeft": 1.7976931348623157e+308,
+	"orthoRight": 5e-324,
+	"orthoTop": 5e-324,
+	"orthoBottom": 1.7976931348623157e+308,
 	"diffuse": [
 		1,
 		1,
@@ -36,12 +40,17 @@
 	],
 	"name": "sun",
 	"id": "a76adafc-c695-43b9-bc2a-a5b1a01a6419",
-	"uniqueId": 12,
 	"state": "",
 	"metadata": {
-		"script": {}
+		"script": {
+			"name": "None"
+		},
+		"_waitingParentId": null
 	},
+	"uniqueId": 12,
 	"type": 1,
 	"animations": [],
-	"ranges": []
+	"ranges": [],
+	"isEnabled": true,
+	"parentId": null
 }

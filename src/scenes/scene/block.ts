@@ -1,6 +1,7 @@
 import { Mesh, PhysicsImpostor } from "@babylonjs/core";
 
-import { fromScene } from "../tools";
+//import { fromScene } from "../tools";
+import { fromScene } from "../decorators";
 
 import BallComponent from "./ball";
 import GameComponent from "./game";
@@ -38,11 +39,12 @@ export default class BlockComponent extends Mesh {
         // Register event to know when the block collides with the ball.
         let onPhysicsCollideFunc: () => void;
         this.physicsImpostor.registerOnPhysicsCollide(this._ball.physicsImpostor, onPhysicsCollideFunc = () => {
+            // ballがぶつかったblockは物理コライダを削除する
             this.physicsImpostor.unregisterOnPhysicsCollide(this._ball.physicsImpostor, onPhysicsCollideFunc);
             this.physicsImpostor.dispose();
 
             this._scene.updateScore();
-
+            // Meshを不活性にする＝反応しなくなる
             this.setEnabled(false);
         });
     }

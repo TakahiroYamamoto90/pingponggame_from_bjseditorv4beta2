@@ -3,10 +3,12 @@ var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -21,7 +23,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@babylonjs/core");
 var gui_1 = require("@babylonjs/gui");
-var tools_1 = require("../tools");
+//import { fromScene } from "../tools";
+var decorators_1 = require("../decorators");
 var GameComponent = /** @class */ (function (_super) {
     __extends(GameComponent, _super);
     /**
@@ -117,7 +120,7 @@ var GameComponent = /** @class */ (function (_super) {
      */
     GameComponent.prototype.updateScore = function () {
         this._collidedBlocksCount++;
-        this._counterControl.text = "Blocks " + this._collidedBlocksCount + " / 8";
+        this._counterControl.text = "Blocks ".concat(this._collidedBlocksCount, " / 8");
         if (this._collidedBlocksCount === 8) {
             this._gameMessageControl.isVisible = true;
             this._gameMessageControl.text = "You won!!";
@@ -139,7 +142,7 @@ var GameComponent = /** @class */ (function (_super) {
         });
     };
     __decorate([
-        tools_1.fromScene("ball")
+        (0, decorators_1.fromScene)("ball")
     ], GameComponent.prototype, "_ball", void 0);
     return GameComponent;
 }(core_1.Scene));

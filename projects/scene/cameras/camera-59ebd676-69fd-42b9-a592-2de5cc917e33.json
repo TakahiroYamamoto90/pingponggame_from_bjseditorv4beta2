@@ -29,6 +29,7 @@
 		0.000796437612734735
 	],
 	"fov": 0.8,
+	"projectionPlaneTilt": 0,
 	"minZ": 1,
 	"maxZ": 10000,
 	"inertia": 0.9,
@@ -38,12 +39,14 @@
 	"cameraRigMode": 0,
 	"name": "camera",
 	"id": "59ebd676-69fd-42b9-a592-2de5cc917e33",
-	"uniqueId": 367,
 	"state": "",
 	"metadata": {
-		"script": {},
+		"script": {
+			"name": "None"
+		},
 		"doNotExport": false
 	},
+	"uniqueId": 367,
 	"type": "UniversalCamera",
 	"inputsmgr": {
 		"FreeCameraKeyboardMoveInput": {
@@ -65,7 +68,10 @@
 			],
 			"keysRight": [
 				39
-			]
+			],
+			"rotationSpeed": 0.5,
+			"keysRotateLeft": [],
+			"keysRotateRight": []
 		},
 		"FreeCameraMouseInput": {
 			"tags": null,
@@ -78,5 +84,6 @@
 		}
 	},
 	"animations": [],
-	"ranges": []
+	"ranges": [],
+	"isEnabled": true
 }

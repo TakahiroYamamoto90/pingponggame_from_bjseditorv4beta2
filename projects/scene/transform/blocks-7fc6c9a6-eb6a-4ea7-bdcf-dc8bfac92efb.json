@@ -22,13 +22,15 @@
 	"reIntegrateRotationIntoRotationQuaternion": false,
 	"name": "blocks",
 	"id": "7fc6c9a6-eb6a-4ea7-bdcf-dc8bfac92efb",
-	"uniqueId": 118,
 	"state": "",
 	"metadata": {
-		"script": {},
+		"script": {
+			"name": "None"
+		},
 		"doNotExport": false
 	},
 	"type": "TransformNode",
+	"uniqueId": 118,
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

@@ -20,7 +20,7 @@
 			],
 			"scaling": [
 				50,
-				5,
+				10,
 				1
 			],
 			"pivotMatrix": {
@@ -53,14 +53,17 @@
 			"overrideMaterialSideOrientation": null,
 			"parentId": "ea86735f-1c08-4dee-8a16-12a37d9ab3a7",
 			"isUnIndexed": false,
+			"geometryUniqueId": 36,
 			"geometryId": "0a6933b0-9cd4-4243-a7a6-fec39bd16cea",
 			"subMeshes": null,
+			"materialUniqueId": 7,
 			"materialId": "03bdd37e-fe54-4095-a392-0de62b0de089",
 			"metadata": {
 				"isPickable": true,
 				"script": {
 					"name": "src/scenes/scene/wall.ts"
-				}
+				},
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],

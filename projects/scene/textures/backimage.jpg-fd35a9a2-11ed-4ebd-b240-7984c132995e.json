@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "files/wallimage.jpg",
+	"url": "scene/backimage.jpg",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -11,12 +11,15 @@
 	"uRotationCenter": 0.5,
 	"vRotationCenter": 0.5,
 	"wRotationCenter": 0.5,
+	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"uniqueId": 400,
-	"name": "files/wallimage.jpg",
+	"name": "scene/backimage.jpg",
 	"metadata": {
-		"editorName": "wallimage.jpg",
-		"editorId": "237c9140-808f-4132-9bd0-f9afac68a51b"
+		"editorName": "backimage.jpg",
+		"editorId": "fd35a9a2-11ed-4ebd-b240-7984c132995e",
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		}
 	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
@@ -39,5 +42,6 @@
 	"isRenderTarget": false,
 	"animations": [],
 	"invertY": true,
-	"samplingMode": 3
+	"samplingMode": 3,
+	"_useSRGBBuffer": false
 }

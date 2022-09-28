@@ -3,10 +3,12 @@ var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -20,7 +22,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@babylonjs/core");
-var tools_1 = require("../tools");
+//import { fromScene } from "../tools";
+var decorators_1 = require("../decorators");
 var BlockComponent = /** @class */ (function (_super) {
     __extends(BlockComponent, _super);
     /**
@@ -48,9 +51,11 @@ var BlockComponent = /** @class */ (function (_super) {
         // Register event to know when the block collides with the ball.
         var onPhysicsCollideFunc;
         this.physicsImpostor.registerOnPhysicsCollide(this._ball.physicsImpostor, onPhysicsCollideFunc = function () {
+            // ballがぶつかったblockは物理コライダを削除する
             _this.physicsImpostor.unregisterOnPhysicsCollide(_this._ball.physicsImpostor, onPhysicsCollideFunc);
             _this.physicsImpostor.dispose();
             _this._scene.updateScore();
+            // Meshを不活性にする＝反応しなくなる
             _this.setEnabled(false);
         });
     };
@@ -61,7 +66,7 @@ var BlockComponent = /** @class */ (function (_super) {
         // ...
     };
     __decorate([
-        tools_1.fromScene("ball")
+        (0, decorators_1.fromScene)("ball")
     ], BlockComponent.prototype, "_ball", void 0);
     return BlockComponent;
 }(core_1.Mesh));

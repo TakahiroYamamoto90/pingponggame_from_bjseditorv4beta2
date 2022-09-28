@@ -1,4 +1,5 @@
 {
+	"materials": [],
 	"meshes": [
 		{
 			"name": "ball",
@@ -51,13 +52,19 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
+			"geometryUniqueId": 43,
 			"geometryId": "ae4e5611-bf7e-4695-a1ac-475d11d49844",
 			"subMeshes": null,
+			"materialUniqueId": 759,
+			"materialId": "0b96a3aa-c337-4105-83c8-3e62ac437347",
 			"metadata": {
 				"isPickable": true,
 				"script": {
 					"name": "src/scenes/scene/ball.ts"
-				}
+				},
+				"renderingGroupId": 0,
+				"_waitingParentId": null,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],
@@ -72,6 +79,7 @@
 				0
 			],
 			"applyFog": true,
+			"parentId": null,
 			"delayLoadingFile": "geometries/ae4e5611-bf7e-4695-a1ac-475d11d49844.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
@@ -122,7 +130,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

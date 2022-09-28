@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "files/heart.png",
+	"url": "scene/sphereMap.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -11,13 +11,15 @@
 	"uRotationCenter": 0.5,
 	"vRotationCenter": 0.5,
 	"wRotationCenter": 0.5,
+	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"uniqueId": 83,
-	"name": "files/heart.png",
+	"name": "scene/sphereMap.png",
 	"metadata": {
-		"editorName": "heart.png",
-		"editorId": "7b495788-3f85-4e1b-b53a-8eadc47a299e",
-		"isLocked": true
+		"editorName": "sphereMap.png",
+		"editorId": "8f6321dc-12fc-45b4-95a6-92fe4b5a3340",
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		}
 	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
@@ -40,5 +42,6 @@
 	"isRenderTarget": false,
 	"animations": [],
 	"invertY": true,
-	"samplingMode": 3
+	"samplingMode": 3,
+	"_useSRGBBuffer": false
 }
